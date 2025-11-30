@@ -740,9 +740,7 @@ body {
     /* Главное — все блоки становятся вертикальными */
     .main,
     .general,
-    .work_wrapper,
     .profile_wrapper,
-    .education_wrapper,
     .content,
     .left_wrapper {
         display: block !important;
@@ -773,9 +771,7 @@ body {
     }
 
     /* Блоки профиля, работы, образования — ниже */
-    .profile_wrapper,
-    .work_wrapper,
-    .education_wrapper {
+    .profile_wrapper {
         order: unset;
         margin-top: 10px;
     }
