@@ -740,7 +740,7 @@ body {
     .content,
     .left_wrapper, 
     .left_title,
-    .left_info, {
+    .left_info {
         display: block !important;
         width: 100% !important;
         max-width: 100% !important;
