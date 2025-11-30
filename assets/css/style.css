@@ -734,97 +734,27 @@ body {
         padding: 10px 20px;
     }
 }
-
-@media (max-width: 768px) {
-    .main {
-        max-width: 100%;
-        margin: 0 10px;
-    }
-
-    .general {
-        flex-direction: column;
-    }
-
-    .left_wrapper {
-        width: 100%;
-        border-right: none;
-        border-bottom: 1px solid #f4effe;
-        padding-bottom: 20px;
-    }
-
-    .content {
-        width: 100%;
-        background-position: center bottom;
-    }
-
-    .title {
-        justify-content: center;
-        text-align: center;
-    }
-
-    .frame {
-        width: auto;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .frame_text_1, .frame_text_3 {
-        font-size: 32px;
-    }
-
-    .work_wrapper, .profile_wrapper, .education_wrapper {
-        height: auto;
-    }
-}
-
+/* ========= 480px и меньше ========= */
 @media (max-width: 480px) {
     .title {
         flex-direction: column;
         gap: 10px;
+        text-align: center;
     }
 
-    .border {
-        width: 80px;
-        height: 80px;
-    }
+    .border { width: 80px; height: 80px; }
+    .photo { width: 70px; height: 70px; }
+    .photo img { width: 65px; height: 65px; }
 
-    .photo {
-        width: 70px;
-        height: 70px;
-    }
+    .frame_text_1, .frame_text_3 { font-size: 26px; }
+    .frame_text_2 { height: 60px; }
 
-    .photo img {
-        width: 65px;
-        height: 65px;
-    }
+    .left_block { padding: 15px 25px; }
+    .left_title { font-size: 18px; }
+    .left_info_title { font-size: 12px; }
+    .left_info_descr { font-size: 10px; }
 
-    .frame_text_1, .frame_text_3 {
-        font-size: 26px;
-    }
-
-    .frame_text_2 {
-        height: 60px;
-    }
-
-    .left_block {
-        padding: 15px 25px;
-    }
-
-    .left_title {
-        font-size: 18px;
-    }
-
-    .left_info_title {
-        font-size: 12px;
-    }
-
-    .left_info_descr {
-        font-size: 10px;
-    }
-
-    .profile_descr span {
-        font-size: 9px;
-    }
+    .profile_descr span { font-size: 9px; }
 
     .profile_statistics {
         flex-wrap: wrap;
@@ -860,24 +790,8 @@ body {
         font-size: 10px;
     }
 }
-@media (max-width: 992px) {
-    .general {
-        flex-direction: column;
-    }
 
-    .left_wrapper, 
-    .content {
-        width: 100% !important;
-    }
-
-    .left_block {
-        padding: 20px 20px;
-    }
-
-    .content {
-        background-position: center bottom;
-    }
-}
+/* ========= до 600px ========= */
 @media (max-width: 600px) {
     .title {
         flex-direction: column;
@@ -920,3 +834,102 @@ body {
     }
 }
 
+/* ========= до 767px (Smartphones) ========= */
+@media (max-width: 767px) {
+    .main {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    .general {
+        flex-direction: column;
+    }
+
+    .left_wrapper {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #f4effe;
+        padding-bottom: 20px;
+        order: 1;
+    }
+
+    .content {
+        width: 100%;
+        background-position: center bottom;
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .title {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .frame {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .frame_text_1, .frame_text_3 {
+        font-size: 32px;
+    }
+
+    .work_wrapper, .profile_wrapper, .education_wrapper {
+        height: auto;
+        flex-direction: column;
+    }
+}
+
+/* ========= 768px – 991px (Tablets) ========= */
+@media (min-width: 768px) and (max-width: 991px) {
+    .work_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left_wrapper {
+        order: 1;
+    }
+
+    .content {
+        order: 2;
+        margin-top: 20px;
+    }
+}
+
+/* ========= до 992px (Общее) ========= */
+@media (max-width: 992px) {
+    .general {
+        flex-direction: column;
+    }
+
+    .left_wrapper, 
+    .content {
+        width: 100% !important;
+    }
+
+    .left_block {
+        padding: 20px 20px;
+    }
+
+    .content {
+        background-position: center bottom;
+    }
+}
+
+/* ========= 992px – 1199px (Laptop) ========= */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .work_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* ========= 1200px и больше (Desktop) ========= */
+@media (min-width: 1200px) {
+    .work_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
