@@ -648,6 +648,10 @@ body {
     animation: fill 2s forwards;
 }
 
+.progress:hover .progress-fill {
+    background: linear-gradient(90deg, #FA709A, #FEE140);
+}
+
 .theme-btn {
     width: 100%;
     background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
