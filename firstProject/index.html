@@ -1,11 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CV document</title>
+    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/style-white.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link id="theme-style" rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <section class="cv">
+        <div class="main">
+            <center>
+                <button id="switch-theme" class="theme-btn">Change style</button>
+            </center>
+            <div class="banner">
+                <div class="title">
+                    <div class="border">
+                        <div class="photo">
+                            <img src="assets/img/photo.png">
+                        </div>
+                    </div>
+                    <div class="frame">
+                        <div class="frame_text_1">
+                            <span class="gradient-blue_purple">Paul</span>
+                            <span class="white-text">Pritula</span>
+                        </div>
+                        <div class="frame_text_2">i</div>
+                        <div class="frame_text_3">
+                            <span class="white-text">Lesson</span>
+                            <span class="gradient-red_orange">Ready?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <div class="left_wrapper">
+                    <div class="left_block">
+                        <div class="left_content">
+                            <div class="left_title">Personal</div>
+                            <div class="left_info">
+                                <span class="left_info_title">Name</span>
+                                <span class="left_info_descr">Paul Pritula</span>
+                            </div>
+                            <div class="left_info">
+                                <span class="left_info_title">Birthday</span>
+                                <span class="left_info_descr">22 may 1989 (36)</span>
+                            </div>
+                            <div class="left_info">
+                                <span class="left_info_title">Nationality</span>
+                                <span class="left_info_descr">Georgia (Ukraine)</span>
+                            </div>
+                            <div class="left_info">
+                                <span class="left_info_title">Languages</span>
+                                <dispanv class="left_info_descr">Georgian, Russian, English</dispanv>
+                            </div>
+                        </div>
+                        <div class="left_content">
+                            <div class="left_title">Contact</div>
+                            <div class="left_info">
+                                <span class="left_info_title">Email</span>
+                                <span class="left_info_descr no_transform"><a href="mailto:pritulapavel@gmail.com" target="_blank" rel="noopener noreferrer">pritulapavel@gmail.com</a></span>
+                            </div>
+                            <div class="left_info">
+                                <span class="left_info_title">Web</span>
+                                <span class="left_info_descr no_transform"><a href="https://google.com" target="_blank" rel="noopener noreferrer">https://google.com</a></span>
+                            </div>
+                            <div class="left_info">
+                                <span class="left_info_title">LinkedIn</span>
+                                <span class="left_info_descr no_transform"><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/</a></span>
+                            </div>
+                        </div>
+                        <div class="left_content">
+                            <div class="left_title">Software</div>
+                            <div class="left_info no_border">
+                                <div class="left_info_title">Figma</div>
+                                <div class="left_info_descr">
+                                    <div class="progress">
+                                        <div class="progress-fill" style="--value: 25%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left_info no_border">
+                                <div class="left_info_title">Adobe Photoshop</div>
+                                <div class="left_info_descr">
+                                    <div class="progress">
+                                        <div class="progress-fill" style="--value: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left_info no_border">
+                                <div class="left_info_title">Windows</div>
+                                <div class="left_info_descr">
+                                    <div class="progress">
+                                        <div class="progress-fill" style="--value: 90.67%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left_info no_border">
+                                <div class="left_info_title">Development</div>
+                                <div class="left_info_descr">
+                                    <div class="progress">
+                                        <div class="progress-fill" style="--value: 50%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_content">
+                            <div class="left_title"><img src="assets/img/logo.svg" id="logotype"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="profile_wrapper">
+                        <div class="profile_title">
+                            <span>Profile</span>
+                        </div>
+                        <div class="profile_descr">
+                            <span>I am a Product Designer and Frontend Developer, I fully understand the process of
+                                design and development of a digital product, my job is to make a product usable and
+                                visually appealing, through the Design Thinking methodology I manage to create products
+                                that are endearing to users.</span>
+                        </div>
+                        <div class="profile_statistics">
+                            <div class="circle-progress" data-percentage="90" data-direction="cw">
+                                <svg viewBox="0 0 100 100" width="80" height="80">
+                                    <defs>
+                                        <linearGradient id="circle-gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                                            <stop offset="0%" stop-color="#84FAB0" />
+                                            <stop offset="100%" stop-color="#8FD3F4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="circle-bg" cx="50" cy="50" r="36" stroke-width="8" fill="none" />
+                                    <circle class="circle-fill" cx="50" cy="50" r="36" stroke="url(#circle-gradient)"
+                                        stroke-width="6" fill="none" stroke-linecap="round" />
+                                </svg>
+                                <span class="circle-label">UX</span>
+                            </div>
+                            <div class="circle-progress" data-percentage="90" data-direction="cw">
+                                <svg viewBox="0 0 100 100" width="80" height="80">
+                                    <defs>
+                                        <linearGradient id="circle-gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                                            <stop offset="0%" stop-color="#84FAB0" />
+                                            <stop offset="100%" stop-color="#8FD3F4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="circle-bg" cx="50" cy="50" r="36" stroke-width="8" fill="none" />
+                                    <circle class="circle-fill" cx="50" cy="50" r="36" stroke="url(#circle-gradient)"
+                                        stroke-width="6" fill="none" stroke-linecap="round" />
+                                </svg>
+                                <span class="circle-label">UI</span>
+                            </div>
+                            <div class="circle-progress" data-percentage="80" data-direction="cw">
+                                <svg viewBox="0 0 100 100" width="80" height="80">
+                                    <defs>
+                                        <linearGradient id="circle-gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                                            <stop offset="0%" stop-color="#84FAB0" />
+                                            <stop offset="100%" stop-color="#8FD3F4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="circle-bg" cx="50" cy="50" r="36" stroke-width="8" fill="none" />
+                                    <circle class="circle-fill" cx="50" cy="50" r="36" stroke="url(#circle-gradient)"
+                                        stroke-width="6" fill="none" stroke-linecap="round" />
+                                </svg>
+                                <span class="circle-label">DESIGN</span>
+                            </div>
+                            <div class="circle-progress" data-percentage="90" data-direction="cw">
+                                <svg viewBox="0 0 100 100" width="80" height="80">
+                                    <defs>
+                                        <linearGradient id="circle-gradient" x1="100%" y1="0%" x2="0%" y2="0%">
+                                            <stop offset="0%" stop-color="#84FAB0" />
+                                            <stop offset="100%" stop-color="#8FD3F4" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="circle-bg" cx="50" cy="50" r="36" stroke-width="8" fill="none" />
+                                    <circle class="circle-fill" cx="50" cy="50" r="36" stroke="url(#circle-gradient)"
+                                        stroke-width="6" fill="none" stroke-linecap="round" />
+                                </svg>
+                                <span class="circle-label">IA</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work_wrapper">
+                        <div class="work_title">
+                            <span>Work</span>
+                        </div>
+                        <div class="work_content">
+                            <div class="work_year">2025</div>
+                            <div class="timeline-dot_work"></div>
+                            <div class="work_block">
+                                <div class="work_block_title">COMMUNITY AMBASSADOR</div>
+                                <div class="work_block_description">PLATZI, COLOMBIA</div>
+                            </div>
+                        </div>
+                        <div class="work_content">
+                            <div class="work_year">2024</div>
+                            <div class="timeline-dot_work"></div>
+                            <div class="work_block">
+                                <div class="work_block_title">PRODUCT DESIGNER</div>
+                                <div class="work_block_description">UPWORK, BUCARAMANGA COLOMBIA</div>
+                            </div>
+                        </div>
+                        <div class="work_content">
+                            <div class="work_year">2023</div>
+                            <div class="timeline-dot_work"></div>
+                            <div class="work_block">
+                                <div class="work_block_title">UX/UI DESIGNER</div>
+                                <div class="work_block_description">FRELANCE BUCARAMANGA, COLOMBIA</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education_wrapper">
+                        <div class="education_title">
+                            <span>Education</span>
+                        </div>
+                        <div class="education_content">
+                            <div class="education_year">2022</div>
+                            <div class="timeline-dot_education"></div>
+                            <div class="education_block">
+                                <div class="education_block_title">ux design</div>
+                                <div class="education_block_description">coursera</div>
+                            </div>
+                        </div>
+                        <div class="education_content">
+                            <div class="education_year">2021</div>
+                            <div class="timeline-dot_education"></div>
+                            <div class="education_block">
+                                <div class="education_block_title">UX/UI DESIGNER - product design</div>
+                                <div class="education_block_description">platzi, colombia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script>
+        (function () {
+            'use strict';
+            function applyTheme(theme) {
+                const themes = {
+                    light: { css: 'assets/css/style-white.css', logo: 'assets/img/logo_dark.svg' },
+                    dark: { css: 'assets/css/style.css', logo: 'assets/img/logo.svg' }
+                };
+                const themeLink = document.getElementById('theme-style');
+                const logoLink = document.getElementById('logotype');
+                if (themeLink && logoLink && themes[theme]) {
+                    themeLink.href = themes[theme].css;
+                    logoLink.src = themes[theme].logo;
+                    localStorage.setItem('theme', theme);
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                document.querySelectorAll('.circle-progress').forEach(c => {
+                    const fill = c.querySelector('.circle-fill');
+                    if (!fill) return;
+                    const radius = 36;
+                    const circumference = 2 * Math.PI * radius;
+                    const percent = parseInt(c.dataset.percentage, 10) || 0;
+                    const direction = c.dataset.direction === 'ccw' ? -1 : 1;
+                    fill.style.strokeDasharray = circumference;
+                    fill.style.strokeDashoffset = direction * circumference;
+                    setTimeout(() => {
+                        fill.style.strokeDashoffset = direction * circumference * (1 - percent / 100);
+                    }, 50);
+                });
+                let currentTheme = localStorage.getItem('theme') || 'light';
+                applyTheme(currentTheme);
+                const button = document.getElementById('switch-theme');
+                if (button) {
+                    button.addEventListener('click', () => {
+                        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+                        applyTheme(currentTheme);
+                    });
+                }
+            });
+        })();
+    </script>
 </body>
+
 </html>
