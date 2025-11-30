@@ -767,6 +767,7 @@ body {
         background-position: center bottom;
     }
     .profile_wrapper {
+        width:100%
         order: unset;
         margin-top: 10px;
     }
