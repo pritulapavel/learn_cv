@@ -789,4 +789,7 @@ body {
     .profile_title {
         margin-bottom: 10px;
     }
+    .frame_text_1 {
+        width:140px;
+    }
 }
