@@ -790,5 +790,6 @@ body {
     }
     .frame_text_1 {
         width:140px;
+        text-align: left;
     }
 }
