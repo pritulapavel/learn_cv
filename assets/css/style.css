@@ -785,4 +785,7 @@ body {
     .work_year::before {
         left: -1px;
     }
+    .profile_title {
+        margin-bottom: 10px;
+    }
 }
