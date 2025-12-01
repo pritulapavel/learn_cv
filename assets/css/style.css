@@ -742,7 +742,7 @@ body {
     .left_title,
     .left_info {
         display: block !important;
-        width: 100% !important;
+        width: auto;
         max-width: 100% !important;
         height: auto !important;
     }
