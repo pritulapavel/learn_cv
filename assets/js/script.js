@@ -27,12 +27,12 @@
                 fill.style.strokeDashoffset = direction * circumference * (1 - percent / 100);
             }, 50);
         });
-        let currentTheme = localStorage.getItem('theme') || 'light';
+        let currentTheme = localStorage.getItem('theme') || 'dark';
         applyTheme(currentTheme);
         const button = document.getElementById('switch-theme');
         if (button) {
             button.addEventListener('click', () => {
-                currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+                currentTheme = currentTheme === 'light' ? 'dark' : 'dark';
                 applyTheme(currentTheme);
             });
         }
