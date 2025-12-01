@@ -766,7 +766,7 @@ body {
     .content {
         order: 1;
         margin-top: 20px;
-        background-position: center bottom;
+        background-position: right bottom;
     }
     .profile_wrapper {
         width:auto !important;
