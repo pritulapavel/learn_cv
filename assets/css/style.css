@@ -780,5 +780,6 @@ body {
         align-items: center;
         text-align: center;
         gap: 15px;
+        width:auto;
     }
 }
