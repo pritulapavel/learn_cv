@@ -807,7 +807,8 @@ body {
         width:70px;
         height:70px;
     }
-    .work_year {
+    .work_year,
+    .education_year {
         padding: 9px 17px;
     }
 }
