@@ -1,33 +1,41 @@
 !(function () {
     "use strict";
-    function e(e) {
-        let t = {
-                light: { css: "assets/css/style-white.css", logo: "assets/img/logo_dark.svg" },
-                dark: { css: "assets/css/style.css", logo: "assets/img/logo.svg" },
-            },
-            s = document.getElementById("theme-style"),
-            l = document.getElementById("logotype");
-        s && l && t[e] && ((s.href = t[e].css), (l.src = t[e].logo), localStorage.setItem("theme", e));
-    }
-    document.addEventListener("DOMContentLoaded", function () {
-        document.querySelectorAll(".circle-progress").forEach((e) => {
-            let t = e.querySelector(".circle-fill");
-            if (!t) return;
-            let s = 2 * Math.PI * 36,
-                l = parseInt(e.dataset.percentage, 10) || 0,
-                o = "ccw" === e.dataset.direction ? -1 : 1;
-            (t.style.strokeDasharray = s),
-                (t.style.strokeDashoffset = o * s),
-                setTimeout(() => {
-                    t.style.strokeDashoffset = o * s * (1 - l / 100);
-                }, 50);
+    document.addEventListener("DOMContentLoaded", () => {
+        const config = {
+            light: {css: "assets/css/style-white.css",logo: "assets/img/logo_dark.svg"},
+            dark: {css: "assets/css/style.css",logo: "assets/img/logo.svg"}
+        };
+        const themeStyle = document.getElementById("theme-style");
+        const logo = document.getElementById("logotype");
+        const switcher = document.getElementById("switch-theme");
+        function setTheme(mode) {
+            if (!config[mode] || !themeStyle || !logo) return;
+            themeStyle.href = config[mode].css;
+            logo.src = config[mode].logo;
+            localStorage.setItem("theme", mode);
+        }
+        document.querySelectorAll(".circle-progress").forEach((el) => {
+            const fill = el.querySelector(".circle-fill");
+            if (!fill) return;
+            const r = 36;
+            const len = 2 * Math.PI * r;
+            const percent = parseInt(el.dataset.percentage, 10) || 0;
+            const direction = el.dataset.direction === "ccw" ? -1 : 1;
+            fill.style.strokeDasharray = len;
+            fill.style.strokeDashoffset = direction * len;
+            setTimeout(() => {
+                fill.style.strokeDashoffset = direction * len * (1 - percent / 100);
+            }, 50);
         });
-        let t = localStorage.getItem("theme") || "dark";
-        e(t);
-        let s = document.getElementById("switch-theme");
-        s &&
-            s.addEventListener("click", () => {
-                e((t = "light" === t ? "dark" : "light"));
+        let currentTheme = localStorage.getItem("theme") || "dark";
+        if (currentTheme === "light") {
+            setTheme("light");
+        }
+        if (switcher) {
+            switcher.addEventListener("click", () => {
+                currentTheme = currentTheme === "light" ? "dark" : "light";
+                setTheme(currentTheme);
             });
+        }
     });
 })();
