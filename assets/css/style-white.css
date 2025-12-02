@@ -51,10 +51,11 @@ body {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    background-color: #F7F6FF;
+    background-color: #6858ed;
     margin-bottom: 2px;
     align-items: center;
     justify-content: center;
+    border-bottom: 2px solid #292929;
 }
 
 .general {
@@ -158,7 +159,7 @@ body {
     width: 227px;
     height: -webkit-fill-available;
     background: #fff;
-    border-right: 0.5px solid #fff;
+    border-right: 0.5px solid #494949;
     order: 0;
     flex-grow: 0;
     box-sizing: border-box;
