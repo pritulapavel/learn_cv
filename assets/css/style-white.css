@@ -26,12 +26,8 @@
 
 body {
     margin: 0;
-    padding: 0;
     color: #292929;
     background-color: #F7F6FF;
-}
-
-.cv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +51,7 @@ body {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    background-color: #292929;
+    background-color: #F7F6FF;
     margin-bottom: 2px;
     align-items: center;
     justify-content: center;
