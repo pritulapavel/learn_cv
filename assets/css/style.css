@@ -52,7 +52,6 @@ body {
     gap: 30px;
     flex-wrap: wrap;
     background-color: #292929;
-    margin-bottom: 2px;
     align-items: center;
     justify-content: center;
 }
